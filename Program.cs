@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 string number1;
@@ -15,16 +15,23 @@ do
             string Inputlast = Console.ReadLine();
             lastnumber = Convert.ToInt32(Inputlast);
             while (number <= lastnumber)
-                {
+                {   
+                    int multiPlayer = 1;
+                    while (multiPlayer <= 9)
+                    {
+                        Console.Write($" {multiPlayer}x{number}={number * multiPlayer}    ");
+                    
+                        multiPlayer++;
+                    }
+                 Console.WriteLine();
 
-                 Console.WriteLine($" 1 x {number} = {number * 1} 2 x {number} = {number * 2} 3 x {number} = {number * 3} 4 x {number} = {number * 4} 5 x {number} = {number * 5} 6 x {number} = {number * 6} 7 x {number} = {number * 8} 8 x {number} = {number * 8} 9 x {number} = {number * 9} ");        
                  number ++;
                 }
+                  
                         
              Console.WriteLine("Do you want continue? (yes -> no)");
              number1 = Console.ReadLine();
         }
         while (number1 == "yes");
-
 
 
