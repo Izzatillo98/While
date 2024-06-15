@@ -18,13 +18,14 @@ do
      //Console.WriteLine($" 7 x {number} = {number * 7} ");
      //Console.WriteLine($" 8 x {number} = {number * 8} ");
      //Console.WriteLine($" 9 x {number} = {number * 9} ");
-     Console.WriteLine("Do you want continue? (y)");
-     number1 = Console.ReadLine();
+     
      number ++;
     }
-    while (number<=9);
+    while (number<=9); 
 
     number++;
+    Console.WriteLine("Do you want continue? (y)");
+     number1 = Console.ReadLine();
 }while(number<=9);
 
 
